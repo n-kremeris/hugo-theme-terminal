@@ -59,7 +59,7 @@ a.button {
     padding: 14px 24px;
   }
 }
-
+/*
 a.read-more,
 a.read-more:hover,
 a.read-more:active {
@@ -69,6 +69,27 @@ a.read-more:active {
   padding: 0;
   margin: 20px 0;
   max-width: 100%;
+    @media (--phone) {
+    margin:auto;
+    padding-top:3px;
+    padding-bottom:3px;
+  }
+}
+*/
+
+a.read-more,
+a.read-more:hover,
+a.read-more:active {
+  display: flex;
+  justify-content: flex-end;
+  width:100%;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  margin-right:0;
+  margin-left:auto;
+  max-width: 100%;
+
 }
 
 .code-toolbar {
