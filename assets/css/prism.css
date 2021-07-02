@@ -271,6 +271,7 @@ pre[class*="language-"].line-numbers > code {
 	content: attr(data-prompt);
 }
 
+/* adjust this for code blocks */
 .code-toolbar {
 	position: relative;
 	margin: var(--code-margin) 0;
@@ -278,9 +279,9 @@ pre[class*="language-"].line-numbers > code {
 	padding-bottom:3px;
 	padding-top:3px;
 	margin-top:0px;
-	margin-bottom:40px;
-	margin-left:20px;
-	margin-right:20px;
+	margin-bottom:20px;
+	margin-left:00px;
+	margin-right:00px;
 	border: 1px solid rgba(255, 255, 255, .1);
 
 	+ .code-toolbar,
