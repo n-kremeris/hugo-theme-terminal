@@ -45,32 +45,32 @@ body {
 */
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-top: 45px;
     margin-bottom: 10px;
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-top: 35px;
     margin-bottom: 10px;
 }
 
 h4 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
 h5,
 h6 {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 
 p {
@@ -83,11 +83,20 @@ p+p {
     margin-bottom: 20px;
 }
 
+h1+p,
+h2+p,
+h3+p,
 h4+p {
     margin-top: -5px;
 }
 
-h2+h4 {
+h1+h2,
+h1+h3,
+h1+h4,
+h2+h3,
+h2+h4,
+h3+h4,
+    {
     margin-top: 0;
 }
 
@@ -288,6 +297,15 @@ ol {
 
     li {
         position: relative;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+
+    }
+
+    p {
+        margin-top: 4px;
+        margin-bottom: 4px;
     }
 
     @media (--phone) {
@@ -303,6 +321,11 @@ ol {
         counter-increment: li;
     }
 
+    p {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
     li:before {
         content: counter(li);
         position: absolute;
@@ -316,6 +339,8 @@ ol {
 ol ol {
     list-style-type: lower-alpha;
 }
+
+
 
 mark {
     background: var(--accent);
