@@ -1,13 +1,19 @@
 <header class="header">
-  <div class="header__inner">
-    <div class="header__logo">
-      {{ partial "logo.html" . }}
+    <div class="header__inner">
+        {{ if isset $.Site.Params.Logo "logoimg" }}
+        <div class="header__logoimg">
+            {{ partial "logoimg.html" . }}
+        </div>
+        {{ else }}
+        <div class="header__logo">
+            {{ partial "logo.html" . }}
+        </div>
+        {{ if len $.Site.Menus }}
+        <div class="menu-trigger">menu</div>
+        {{ end }}
+        {{ end }}
     </div>
     {{ if len $.Site.Menus }}
-      <div class="menu-trigger">menu</div>
-    {{ end }}
-  </div>
-  {{ if len $.Site.Menus }}
     {{ partial "menu.html" . }}
-  {{ end }}
+    {{ end }}
 </header>
