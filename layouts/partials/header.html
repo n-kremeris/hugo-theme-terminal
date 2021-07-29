@@ -8,10 +8,11 @@
         <div class="header__logo">
             {{ partial "logo.html" . }}
         </div>
+        {{ end }}
         {{ if len $.Site.Menus }}
         <div class="menu-trigger">menu</div>
         {{ end }}
-        {{ end }}
+
     </div>
     {{ if len $.Site.Menus }}
     {{ partial "menu.html" . }}
