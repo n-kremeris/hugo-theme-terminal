@@ -60,7 +60,8 @@
     .menu {
         --shadow-color: color-mod(var(--background) a(80%));
         --shadow: 0 10px var(--shadow-color), -10px 10px var(--shadow-color), 10px 10px var(--shadow-color);
-        margin: 20px 0;
+        margin: 10px 0;
+        margin-bottom: 5px;
 
         @media (--phone) {
             @mixin menu;
@@ -71,6 +72,8 @@
         &__inner {
             display: flex;
             flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
             list-style: none;
             margin: 0;
             padding: 0;
@@ -90,10 +93,11 @@
             }
 
             li {
+                margin-bottom: 2px;
+                flex: 0 0 auto;
+
                 &:not(:last-of-type) {
                     margin-right: 20px;
-                    margin-bottom: 10px;
-                    flex: 0 0 auto;
                 }
             }
 
