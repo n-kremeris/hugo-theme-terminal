@@ -41,7 +41,7 @@
     &-meta {
         font-size: 0.9rem;
         margin-bottom: 10px;
-        color: color-mod(var(--accent) a(70%));
+        color: color-mod(var(--accent) a(90%));
     }
 
     &-title {
